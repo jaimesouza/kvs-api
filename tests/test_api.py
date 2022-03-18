@@ -149,3 +149,60 @@ class TestAPI:
 
         assert response.status_code == 404
         assert response.json() == expected_json
+
+    def test_integration(self):
+
+        # delete all key-value pairs
+        client.delete("/api/pairs/id")
+        client.delete("/api/pairs/name")
+        client.delete("/api/pairs/serie")
+        client.delete("/api/pairs/region")
+
+        # insert a new key-value pair
+        client.post(
+            "/api/pairs",
+            json={
+                "key": "age",
+                "value": "30"
+            }
+        )
+
+        # insert a new key-value pair
+        client.post(
+            "/api/pairs",
+            json={
+                "key": "country",
+                "value": "Brazil"
+            }
+        )
+
+        # update one key-value pair
+        client.put(
+            "/api/pairs/country",
+            json={"value": "USA"}
+        )
+
+        # delete one key-value pair
+        client.delete("/api/pairs/age")
+
+        # fetch all key-value pairs
+        response = client.get("/api/pairs")
+
+        expected_json = [
+            {
+                "key": "country",
+                "value": "USA"
+            }
+        ]
+
+        assert response.status_code == 200
+        assert response.json() == expected_json
+
+        # delete one key-value pair
+        client.delete("/api/pairs/country")
+
+        # fetch all key-value pairs
+        response = client.get("/api/pairs")
+
+        assert response.status_code == 200
+        assert response.json() == []
