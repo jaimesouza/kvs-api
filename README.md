@@ -37,9 +37,22 @@ And access it on the browser:
 
 ## API
 
-- GET `/` :
-- GET `/api/pairs'` :
-- GET `/api/pairs/{key}'` :
-- POST `/api/pairs'` :
-- PUT `/api/pairs/{key}'` :
-- DELETE `/api/pairs/{key}'` :
+- GET `/`
+  - return a JSON blob
+  - app-author and app-name info are returned in the response headers
+
+- GET `/api/pairs`
+  - return all key-value pairs in KVS
+
+- GET `/api/pairs/{key}`
+  - return a key-value pair with the sent key
+  - the result is also returned in the response headers
+
+- POST `/api/pairs`
+  - insert a new key-value pair in KVS
+
+- PUT `/api/pairs/{key}`
+  - update the value of a key-value pair with the sent key
+
+- DELETE `/api/pairs/{key}`
+  - delete a key-value pair with the sent key
