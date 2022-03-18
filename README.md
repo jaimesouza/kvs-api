@@ -7,7 +7,7 @@ Simple REST API for a key-value store using Python FastAPI framework.
 
 The app can be installed using one the follwing options:
 
- - Option 1:
+Option 1:
 
 `git clone https://github.com/jaimesouza/kvs-api.git`
 
@@ -15,9 +15,9 @@ The app can be installed using one the follwing options:
 
 `pip install -e .`
 
-- Option 2:
+Option 2:
 
-'pip install --index-url=https://github.com/jaimesouza/kvs-api'
+`pip install --index-url=https://github.com/jaimesouza/kvs-api`
 
 ## Tests
 
