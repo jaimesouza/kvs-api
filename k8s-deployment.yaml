@@ -26,12 +26,11 @@ apiVersion: v1
 kind: Service
 metadata:
   name: kvs-api-service
-spec:
-  type: NodePort
+spec:  
   selector:
     app: kvs-api
-  ports:     
-    - port: 80
-      targetPort: 80      
-      # (default: 30000-32767)
-      nodePort: 30000
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80 
+  type: LoadBalancerg

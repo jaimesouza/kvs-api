@@ -66,6 +66,6 @@ Github actions workflows run:
 
 ## Try Online
 
-The API was deployed on a Kubernetes cluster and is available on:
+The API was deployed on a Kubernetes cluster and it's available on:
 
 `http://144.22.204.27/docs`
