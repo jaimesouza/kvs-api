@@ -12,7 +12,7 @@ on:
 jobs:
   test:
   
-    name: test-${{ matrix.os }}-${{ matrix.python }}
+    name: test-${{ matrix.os }}-python-${{ matrix.python }}
     runs-on: "${{ matrix.os }}"
 
     strategy:
