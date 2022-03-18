@@ -30,3 +30,16 @@ Make sure that the tests pass by running:
 After install the app, run it with:
 
 `unicorn kvs:app --reload`
+
+And access it on the browser:
+
+`http://localhost:8000/docs`
+
+## API
+
+- GET `/` :
+- GET `/api/pairs'` :
+- GET `/api/pairs/{key}'` :
+- POST `/api/pairs'` :
+- PUT `/api/pairs/{key}'` :
+- DELETE `/api/pairs/{key}'` :
