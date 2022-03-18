@@ -17,7 +17,7 @@ Option 1:
 
 Option 2:
 
-`pip install --index-url=https://github.com/jaimesouza/kvs-api`
+`pip install git+https://github.com/jaimesouza/kvs-api.git`
 
 ## Tests
 
