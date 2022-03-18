@@ -63,3 +63,9 @@ Github actions workflows run:
 
 - Flake8 and Pytest (.github/workflows/test_ci.yml) on push and pull_request events.
 - Build docker image and push it to dockerhub (.github/workflows/docker-build.yml) on release event.
+
+## Try Online
+
+The API was deployed on a Kubernetes cluster and is available on:
+
+`http://144.22.204.27/docs`
