@@ -3,7 +3,7 @@
 Simple REST API for a key-value store using Python FastAPI framework.
 
 
-## Installation:
+## Installation
 
 The app can be installed using one the follwing options:
 
@@ -24,3 +24,9 @@ Option 2:
 Make sure that the tests pass by running:
 
 `pytest`
+
+## Execution
+
+After install the app, run it with:
+
+`unicorn kvs:app --reload`
