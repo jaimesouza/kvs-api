@@ -6,7 +6,7 @@ on:
 
 jobs:
   docker:
-    runs-on: archarm_latest
+    runs-on: ubuntu-latest
     steps:
       -
         name: Set up QEMU
