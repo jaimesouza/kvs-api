@@ -29,7 +29,7 @@ Make sure that the tests pass by running:
 
 After install the app, run it with:
 
-`unicorn kvs:app --reload`
+`uvicorn kvs:app --reload`
 
 And access it on the browser:
 
